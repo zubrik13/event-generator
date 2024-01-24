@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "event-generator"
+version = "0.1.0"
+description = "Generates Events with formatted fake data for streams. The intention is for development and testing purposes without relying on real data."
+authors = ["Roman Zubrytski <rzubrytski@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Faker-Events = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
