@@ -1,3 +1,4 @@
 .idea
-run.sh
-biuld-docker.sh
+./run.sh
+./build-docker.sh
+*.sh
