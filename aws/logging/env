@@ -1,0 +1,5 @@
+DESTINATION_BUCKET=s3-app-logging-sample
+BUCKET_PREFIX=100eps
+GROUP_NAME=/ecs/event-generator-100eps
+PREFIX=100eps
+NDAYS=1

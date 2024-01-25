@@ -1,0 +1,53 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "event-generator-100eps",
+            "image": "zubrik/event-generator:100eps",
+            "cpu": 512,
+            "memory": 1024,
+            "memoryReservation": 768,
+            "portMappings": [
+                {
+                    "name": "event-generator-100eps-8000-tcp",
+                    "containerPort": 8000,
+                    "hostPort": 8000,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-create-group": "true",
+                    "awslogs-group": "/ecs/event-generator-100eps",
+                    "awslogs-region": "eu-central-1",
+                    "awslogs-stream-prefix": "ecs"
+                },
+                "secretOptions": []
+            }
+        }
+    ],
+    "family": "event-generator-100eps",
+    "taskRoleArn": "arn:aws:iam::767397962230:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::767397962230:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "volumes": [],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "512",
+    "memory": "1024",
+    "ephemeralStorage": {
+        "sizeInGiB": 21
+    },
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    }
+}

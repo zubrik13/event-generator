@@ -22,8 +22,10 @@ docker-compose.yml
 # etc
 README.md
 run.sh
-build-docker.sh
+build.sh
+slim.sh
 .DS_Store
+aws
 
 # Byte-compiled / optimized / DLL files
 **/__pycache__/

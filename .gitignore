@@ -1,4 +1,5 @@
 .idea
-./run.sh
-./build-docker.sh
+run.sh
+build.sh
+slim.sh
 *.sh
